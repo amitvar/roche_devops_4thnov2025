@@ -142,3 +142,44 @@ Resolving deltas: 100% (1/1), done.
 ashu-roche-devops-code
 
 ```
+
+## git pull 
+
+```
+ashu@ip-172-31-5-155 ashu-roche-devops-code]$ ls
+README.md  a.txt  b.txtx  c.txt
+[ashu@ip-172-31-5-155 ashu-roche-devops-code]$ 
+[ashu@ip-172-31-5-155 ashu-roche-devops-code]$ cat c.txt 
+okey
+[ashu@ip-172-31-5-155 ashu-roche-devops-code]$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 914 bytes | 914.00 KiB/s, done.
+From github.com:redashu/ashu-roche-devops-code
+   f5b792b..e58547d  master     -> origin/master
+Updating f5b792b..e58547d
+Fast-forward
+ c.txt | 1 +
+ 1 file changed, 1 insertion(+)
+[ashu@ip-172-31-5-155 ashu-roche-devops-code]$ cat c.txt 
+okey
+hii this is ashutoshh
+[ashu@ip-172-31-5-155 ashu-roche-devops-code]$ 
+
+
+```
+
+## info about terraform 
+
+<img src="tf1.png">
+
+### installing amazon linux 
+
+```
+ 1  sudo yum install -y yum-utils shadow-utils
+    2  sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+    3  sudo yum install terraform
+
+```

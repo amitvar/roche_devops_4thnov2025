@@ -20,3 +20,13 @@
       - "{{ x }}" 
       - "{{ z }}"
       state: present 
+
+  - name: copy code to httpd app server location 
+    copy: 
+      src: myapps/index.html 
+      dest: /var/www/html/ashu.html 
+
+  - name: starting {{ x }} service 
+    service: 
+      name: "{{x}}"
+      state: started 
